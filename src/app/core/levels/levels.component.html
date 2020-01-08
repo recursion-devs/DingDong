@@ -1,0 +1,9 @@
+<div class="container h-100">
+    <div class="row h-100">
+        <ng-container *ngFor="let item of levels">
+            <div (click)="onClickLevel(item)" class="col-3">
+                {{item}}
+            </div>
+        </ng-container>
+    </div>
+</div>
