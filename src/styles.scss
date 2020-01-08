@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/css/_library.scss';
+@import 'assets/css/_font-import.scss';
+@import 'assets/css/fonts.scss';
+@import 'assets/css/designs.scss';
+@import 'assets/css/sizing.scss';
+@import 'assets/css/buttons.scss';
+@import 'assets/css/util.scss';
 
 html,body {
     height: 100%;
     margin: 0;
+    font-size: $font-size;
+    font-family: $font-fam-1;
  }
+

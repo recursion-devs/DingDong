@@ -1,9 +1,29 @@
-<div class="container h-100">
-    <div class="row h-100">
+<div class="container ">
+    <div class="row header static w-100">
+        <div class="col-12 text-center header">
+            Ding Dong Don't Guess
+        </div>
+    </div>
+
+    <div class="w-100 pt-10"> </div>
+
+    <div class="row body">
         <ng-container *ngFor="let item of levels">
-            <div (click)="onClickLevel(item)" class="col-3">
-                {{item}}
+            <div class="col-6 p-02">
+                <div (click)="onClickLevel(item)" class="col-12 p-02 panel text-center">
+                    icon here
+                    <br>
+                    {{item}}
+                </div>
             </div>
         </ng-container>
+    </div>
+
+    <div class="w-100"> </div>
+
+    <div class="row footer">
+        <div class="col-12 text-center footer">
+            Ding Dong Don't Guess
+        </div>
     </div>
 </div>
