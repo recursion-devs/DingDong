@@ -9,16 +9,35 @@
 
     <div class="row body h-80-vh">
         <div class="col-12">
-            <div class="col-12 text-center">
-                Difficulty Level: Easy
+            <div class="col-12 text-center mt-4">
+                Difficulty Level: {{level}}
             </div>
 
-            <div class="col-12 text-center">
-                Image
+            <div class="col-12 text-center mt-2">
+                <img class="level-image" src="assets/pictures/data/{{data.image}}" alt="data-image">
             </div>
 
-            <div class="col-12 text-center">
-                <input type="text">
+            <div class="col-12 text-left mt-2 pl-2">
+                hint :
+            </div>
+
+            <div class="col-12 text-center mt-2">
+                <b class="mr-2">
+                    ANSWER :
+                </b>
+                <input class="w-65" type="text">
+            </div>
+        </div>
+
+        <div class="offset-1 col-4 no-padding">
+            <div class="col-12 p-02 text-center">
+                <button (click)="onClickBack()" class="sub-button"> back </button>
+            </div>
+        </div>
+
+        <div class="col-6 offset-right-1 no-padding">
+            <div class="col-12 p-02 text-center">
+                <button> submit </button>
             </div>
         </div>
     </div>

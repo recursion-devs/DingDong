@@ -2,6 +2,7 @@
 @import 'assets/css/_library.scss';
 @import 'assets/css/_font-import.scss';
 @import 'assets/css/fonts.scss';
+@import 'assets/css/input.scss';
 @import 'assets/css/designs.scss';
 @import 'assets/css/sizing.scss';
 @import 'assets/css/buttons.scss';
@@ -11,6 +12,6 @@ html,body {
     height: 100%;
     margin: 0;
     font-size: $font-size;
-    font-family: $font-fam-1;
+    font-family: $font-fam-2;
  }
 

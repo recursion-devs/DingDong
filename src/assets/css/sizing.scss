@@ -2,6 +2,10 @@
     width: 80% !important;
 }
 
+.w-65{
+    width: 65% !important;
+}
+
 .w-80-vw{
     width: 80vh !important;
 }
@@ -34,10 +38,23 @@
     padding: 0.2em !important;
 }
 
+.pr-2{
+    padding-right: 2em !important;
+}
+
+.pl-2{
+    padding-left: 2em !important;
+}
+
+
 .pt-10{
     padding-top: 10vh;
 }
 
 .pt-95{
     padding-top: 95vh;
+}
+
+.no-padding{
+    padding: 0;
 }

@@ -11,9 +11,26 @@
         <ng-container *ngFor="let item of levels">
             <div class="col-6 p-02">
                 <div (click)="onClickLevel(item)" class="col-12 p-02 panel text-center">
-                    icon here
+                    <img class="level-icon mt-3 mb-2" src="assets/pictures/data/{{item.image}}" alt="data-image">
                     <br>
-                    {{item}}
+                    <ng-container *ngIf="item.level == 0">
+                        <span class="small-font">
+                            Level:
+                        </span>
+                        <b>BASIC</b>
+                    </ng-container>
+                    <ng-container *ngIf="item.level == 1">
+                        <span class="small-font">
+                            Level:
+                        </span>
+                        <b>PWEDE NA</b>
+                    </ng-container>
+                    <ng-container *ngIf="item.level == 2">
+                        <span class="small-font">
+                            Level:
+                        </span>
+                        <b>HIRAP BES</b>
+                    </ng-container>
                 </div>
             </div>
         </ng-container>
